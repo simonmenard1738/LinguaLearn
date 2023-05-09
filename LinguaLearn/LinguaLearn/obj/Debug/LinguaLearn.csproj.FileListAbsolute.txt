@@ -1,0 +1,26 @@
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe.config
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.pdb
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.AssemblyReference.cache
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.SuggestedBindingRedirects.cache
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Form1.resources
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Properties.Resources.resources
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.GenerateResource.cache
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CoreCompileInputs.cache
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
+C:\Users\2062055\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe.config
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.pdb
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.dll
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.xml
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.AssemblyReference.cache
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.SuggestedBindingRedirects.cache
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Form1.resources
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Form2.resources
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Properties.Resources.resources
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.GenerateResource.cache
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CoreCompileInputs.cache
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CopyComplete
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
+C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb
