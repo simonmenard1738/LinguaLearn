@@ -18,5 +18,9 @@ namespace LinguaLearn
         public void AddExercise(Question quiz) {
             Exercises.Add($"{quiz.Name}: Done on {quiz.timeStarted}. Result: {quiz.Grade}/{quiz.QUESTION_COUNT}");
         }
+
+        public static void SaveRecord() { 
+            
+        }
     }
 }

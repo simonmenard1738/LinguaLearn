@@ -81,3 +81,24 @@ C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLe
 C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
 C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb
 C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.statusForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe.config
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.pdb
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.dll
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.xml
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.AssemblyReference.cache
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.SuggestedBindingRedirects.cache
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.aboutForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.DictationForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.GrammerForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.LoginForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.mainForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.matchingForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Properties.Resources.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Register.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.statusForm.resources
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.GenerateResource.cache
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CoreCompileInputs.cache
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CopyComplete
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
+C:\Users\2062055\Downloads\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb

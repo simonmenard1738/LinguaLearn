@@ -13,40 +13,75 @@ namespace LinguaLearn
 {
     public partial class DictationForm : Form
     {
-        DictationQuestion a = new DictationQuestion("What is what", 8);
+        DictationQuestion quiz;
         string answer = "";
-        public DictationForm()
+        Record record;
+        mainForm form;
+        int count;
+        int lang;
+        public DictationForm(Record record, mainForm form, int lang = 0)
         {
+            this.count = 0;
+            this.form = form;
+            this.record = record;
+            this.lang = lang;
+            string language = "";
+            switch (lang)
+            {
+                case 0:
+                    language = "English";
+                    break;
+                case 1:
+                    language = "French";
+                    break;
+                case 2:
+                    language = "Spanish";
+                    break;
+            }
+            quiz = new DictationQuestion($"{language} Dictation", 8, lang);
             InitializeComponent();
             AskQuestion();
+            
         }
 
         private void answerButton_Click(object sender, EventArgs e)
         {
             if (inputTextBox.Text.ToLower().Equals(answer))
             {
-                a.CorrectAnswer();
+                quiz.CorrectAnswer();
                 AskQuestion();
             }
             else { 
-                a.IncorrectAnswer();
+                quiz.IncorrectAnswer();
                 AskQuestion();
             }
+            inputTextBox.Text = "";
         }
         public void AskQuestion()
         {
-            if (a.words.Count != 0)
+            
+            if (quiz.words.Count != 0)
             {
                 //displayLabel.Text = a.words.ElementAt(a.random.Next(a.words.Count)).Key;
-                var ask = a.words.ElementAt(a.random.Next(a.words.Count));
+                var ask = quiz.words.ElementAt(quiz.random.Next(quiz.words.Count));
                 answer = ask.Key;
                 ask.Value.Play();
-                a.words.Remove(answer);
+                quiz.words.Remove(answer);
+                count++;
             }
             else {
-                MessageBox.Show("Your result is" + a.Grade + "/" + a.QUESTION_COUNT);
+                MessageBox.Show("Your result is" + quiz.Grade + "/" + quiz.QUESTION_COUNT);
+                record.AddExercise(quiz);
+                form.Show();
+                this.Hide();
             }
+
             
+        }
+
+        private void DictationForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

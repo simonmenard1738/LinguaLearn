@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,18 +14,14 @@ namespace LinguaLearn
         [STAThread]
         static void Main()
         {
-            var language = ConfigurationManager.AppSettings["language"];
-
-            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
-
-
-
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //User a = new User("", "", ""); 
+            //Application.Run(new mainForm(a));
             //Application.Run(new GrammerForm());
-            //Application.Run(new mainForm());
             Application.Run(new LoginForm());
+            //Application.Run(new LoginForm());
         }
     }
 }

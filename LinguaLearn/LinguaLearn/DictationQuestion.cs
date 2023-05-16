@@ -12,12 +12,15 @@ namespace LinguaLearn
     internal class DictationQuestion : Question
     {
         public Dictionary<String, SoundPlayer> words = new Dictionary<string, SoundPlayer>();
+        int lang = 0;
         
-        public DictationQuestion(string name, int totalQuestions) : base( name, totalQuestions){ 
+        public DictationQuestion(string name, int totalQuestions, int lang) : base( name, totalQuestions){
+            this.lang = lang;
             GenerateQuestions();
+            
         }
         public void GenerateQuestions() {
-            var audioFolder = Path.Combine(Directory.GetCurrentDirectory(), "Dictation");
+            var audioFolder = Path.Combine(Directory.GetCurrentDirectory(), $"Dictation\\{lang}");
             var files = Directory.GetFiles(audioFolder);
             foreach (var word in files)
             {

@@ -43,5 +43,10 @@ namespace LinguaLearn
               (Image)(Properties.Resources.ResourceManager.GetObject(
                   $"Memrise-logo"));
         }
+
+        private void aboutForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

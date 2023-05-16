@@ -78,5 +78,10 @@ namespace LinguaLearn
                 e.Graphics.DrawLine(Pens.Black, startPoint, endPoint);
             }
         }
+
+        private void matchingForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

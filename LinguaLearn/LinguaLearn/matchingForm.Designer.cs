@@ -109,6 +109,7 @@
             this.Controls.Add(this.label2);
             this.Name = "matchingForm";
             this.Text = "matchingForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.matchingForm_FormClosed);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.matching_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.matching_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.matching_MouseMove);
