@@ -14,11 +14,14 @@ namespace LinguaLearn
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //User a = new User("", "", ""); 
+            //Application.Run(new mainForm(a));
             //Application.Run(new GrammerForm());
-            //Application.Run(new mainForm());
-            Application.Run(new LoginForm());
+            Application.Run(new aboutForm());
+            //Application.Run(new LoginForm());
         }
     }
 }
