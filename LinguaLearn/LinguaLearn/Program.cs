@@ -20,7 +20,7 @@ namespace LinguaLearn
             //User a = new User("", "", ""); 
             //Application.Run(new mainForm(a));
             //Application.Run(new GrammerForm());
-            Application.Run(new LoginForm());
+            Application.Run(new matchingForm());
             //Application.Run(new LoginForm());
         }
     }
