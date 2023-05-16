@@ -92,6 +92,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="statusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statusForm.Designer.cs">
+      <DependentUpon>statusForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThereQuestion.cs" />
     <Compile Include="User.cs" />
     <Compile Include="DictationForm.cs">
@@ -132,6 +138,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statusForm.resx">
+      <DependentUpon>statusForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

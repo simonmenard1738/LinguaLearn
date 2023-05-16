@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DictationForm));
             this.inputTextBox = new System.Windows.Forms.TextBox();
             this.answerButton = new System.Windows.Forms.Button();
             this.displayLabel = new System.Windows.Forms.Label();
@@ -59,7 +60,7 @@
             this.displayLabel.TabIndex = 2;
             this.displayLabel.Text = "Listen carefully....";
             // 
-            // Form1
+            // DictationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -67,7 +68,8 @@
             this.Controls.Add(this.displayLabel);
             this.Controls.Add(this.answerButton);
             this.Controls.Add(this.inputTextBox);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "DictationForm";
             this.Text = "Dictation Exercise";
             this.ResumeLayout(false);
             this.PerformLayout();

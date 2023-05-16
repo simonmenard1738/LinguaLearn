@@ -80,3 +80,4 @@ C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLe
 C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CopyComplete
 C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
 C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb
+C:\Users\nabil\Documents\Vanier\App dev\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.statusForm.resources

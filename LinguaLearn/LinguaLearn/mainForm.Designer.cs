@@ -79,6 +79,7 @@
             this.aboutButton.TabIndex = 3;
             this.aboutButton.Text = "About";
             this.aboutButton.UseVisualStyleBackColor = true;
+            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
             // 
             // applaButton
             // 
@@ -194,7 +195,7 @@
             this.Controls.Add(this.displayLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
-            this.Text = "mainForm";
+            this.Text = "Main Page";
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.legoPictureBox)).EndInit();

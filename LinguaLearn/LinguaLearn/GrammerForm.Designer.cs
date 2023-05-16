@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GrammerForm));
             this.thereButton = new System.Windows.Forms.RadioButton();
             this.theirButton = new System.Windows.Forms.RadioButton();
             this.theyreButton = new System.Windows.Forms.RadioButton();
@@ -80,7 +81,7 @@
             this.qLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.qLabel.Click += new System.EventHandler(this.qLabel_Click);
             // 
-            // Form2
+            // GrammerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,8 +90,9 @@
             this.Controls.Add(this.theyreButton);
             this.Controls.Add(this.theirButton);
             this.Controls.Add(this.thereButton);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "GrammerForm";
+            this.Text = "Grammer";
             this.ResumeLayout(false);
             this.PerformLayout();
 

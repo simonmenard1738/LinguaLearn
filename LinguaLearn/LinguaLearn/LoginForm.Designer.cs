@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label4 = new System.Windows.Forms.Label();
             this.getUname_txtbox = new System.Windows.Forms.TextBox();
             this.get_btn = new System.Windows.Forms.Button();
@@ -38,24 +39,27 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(125, 32);
+            this.label4.Location = new System.Drawing.Point(94, 26);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 16);
+            this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "Log In";
             // 
             // getUname_txtbox
             // 
-            this.getUname_txtbox.Location = new System.Drawing.Point(53, 70);
+            this.getUname_txtbox.Location = new System.Drawing.Point(40, 57);
+            this.getUname_txtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.getUname_txtbox.Name = "getUname_txtbox";
-            this.getUname_txtbox.Size = new System.Drawing.Size(187, 22);
+            this.getUname_txtbox.Size = new System.Drawing.Size(141, 20);
             this.getUname_txtbox.TabIndex = 18;
             // 
             // get_btn
             // 
-            this.get_btn.Location = new System.Drawing.Point(91, 140);
+            this.get_btn.Location = new System.Drawing.Point(68, 114);
+            this.get_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.get_btn.Name = "get_btn";
-            this.get_btn.Size = new System.Drawing.Size(112, 43);
+            this.get_btn.Size = new System.Drawing.Size(84, 35);
             this.get_btn.TabIndex = 17;
             this.get_btn.Text = "Log In";
             this.get_btn.UseVisualStyleBackColor = true;
@@ -64,9 +68,10 @@
             // goRegister
             // 
             this.goRegister.AutoSize = true;
-            this.goRegister.Location = new System.Drawing.Point(68, 210);
+            this.goRegister.Location = new System.Drawing.Point(51, 171);
+            this.goRegister.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.goRegister.Name = "goRegister";
-            this.goRegister.Size = new System.Drawing.Size(172, 16);
+            this.goRegister.Size = new System.Drawing.Size(141, 13);
             this.goRegister.TabIndex = 20;
             this.goRegister.TabStop = true;
             this.goRegister.Text = "Want to register? Click here.";
@@ -74,23 +79,26 @@
             // 
             // getPword_txtbox
             // 
-            this.getPword_txtbox.Location = new System.Drawing.Point(53, 98);
+            this.getPword_txtbox.Location = new System.Drawing.Point(40, 80);
+            this.getPword_txtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.getPword_txtbox.Name = "getPword_txtbox";
-            this.getPword_txtbox.Size = new System.Drawing.Size(187, 22);
+            this.getPword_txtbox.Size = new System.Drawing.Size(141, 20);
             this.getPword_txtbox.TabIndex = 21;
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 398);
+            this.ClientSize = new System.Drawing.Size(229, 323);
             this.Controls.Add(this.getPword_txtbox);
             this.Controls.Add(this.goRegister);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.getUname_txtbox);
             this.Controls.Add(this.get_btn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Text = "Login Page";
             this.ResumeLayout(false);
             this.PerformLayout();
 

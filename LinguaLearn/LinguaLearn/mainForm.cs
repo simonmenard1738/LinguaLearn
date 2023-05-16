@@ -121,5 +121,11 @@ namespace LinguaLearn
         {
             lang = languageComboBox.SelectedIndex;
         }
+
+        private void aboutButton_Click(object sender, EventArgs e)
+        {
+            aboutForm aboutForm = new aboutForm();
+            aboutForm.Show();
+        }
     }
 }

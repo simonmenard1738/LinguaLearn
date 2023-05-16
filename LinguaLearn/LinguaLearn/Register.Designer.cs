@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.email_txtbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.save_btn = new System.Windows.Forms.Button();
@@ -40,25 +41,28 @@
             // 
             // email_txtbox
             // 
-            this.email_txtbox.Location = new System.Drawing.Point(127, 160);
+            this.email_txtbox.Location = new System.Drawing.Point(95, 130);
+            this.email_txtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.email_txtbox.Name = "email_txtbox";
-            this.email_txtbox.Size = new System.Drawing.Size(191, 22);
+            this.email_txtbox.Size = new System.Drawing.Size(144, 20);
             this.email_txtbox.TabIndex = 23;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 162);
+            this.label3.Location = new System.Drawing.Point(24, 132);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 22;
             this.label3.Text = "Email";
             // 
             // save_btn
             // 
-            this.save_btn.Location = new System.Drawing.Point(116, 222);
+            this.save_btn.Location = new System.Drawing.Point(87, 180);
+            this.save_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(108, 54);
+            this.save_btn.Size = new System.Drawing.Size(81, 44);
             this.save_btn.TabIndex = 21;
             this.save_btn.Text = "Register";
             this.save_btn.UseVisualStyleBackColor = true;
@@ -66,42 +70,47 @@
             // 
             // user_textbox
             // 
-            this.user_textbox.Location = new System.Drawing.Point(127, 43);
+            this.user_textbox.Location = new System.Drawing.Point(95, 35);
+            this.user_textbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.user_textbox.Name = "user_textbox";
-            this.user_textbox.Size = new System.Drawing.Size(191, 22);
+            this.user_textbox.Size = new System.Drawing.Size(144, 20);
             this.user_textbox.TabIndex = 20;
             // 
             // pass_txtbox
             // 
-            this.pass_txtbox.Location = new System.Drawing.Point(127, 101);
+            this.pass_txtbox.Location = new System.Drawing.Point(95, 82);
+            this.pass_txtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pass_txtbox.Name = "pass_txtbox";
-            this.pass_txtbox.Size = new System.Drawing.Size(191, 22);
+            this.pass_txtbox.Size = new System.Drawing.Size(144, 20);
             this.pass_txtbox.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 104);
+            this.label2.Location = new System.Drawing.Point(23, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 18;
             this.label2.Text = "Password";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 49);
+            this.label1.Location = new System.Drawing.Point(23, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "Username";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(66, 319);
+            this.linkLabel1.Location = new System.Drawing.Point(50, 259);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(234, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(191, 13);
             this.linkLabel1.TabIndex = 24;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Already have an account? Log in here.";
@@ -109,9 +118,9 @@
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 409);
+            this.ClientSize = new System.Drawing.Size(267, 332);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.email_txtbox);
             this.Controls.Add(this.label3);
@@ -120,6 +129,8 @@
             this.Controls.Add(this.pass_txtbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Register";
             this.Text = "Register";
             this.ResumeLayout(false);
