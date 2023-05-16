@@ -40,6 +40,7 @@
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,13 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aboutForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="aboutForm.Designer.cs">
-      <DependentUpon>aboutForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Activity.cs" />
+    <Compile Include="ChangeLanguage.cs" />
     <Compile Include="DictationQuestion.cs" />
     <Compile Include="GrammerForm.cs">
       <SubType>Form</SubType>
@@ -92,12 +88,6 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="statusForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="statusForm.Designer.cs">
-      <DependentUpon>statusForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThereQuestion.cs" />
     <Compile Include="User.cs" />
     <Compile Include="DictationForm.cs">
@@ -108,17 +98,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="aboutForm.resx">
-      <DependentUpon>aboutForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DictationForm.resx">
       <DependentUpon>DictationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GrammerForm.resx">
       <DependentUpon>GrammerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.fr-CA.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.fr-CA.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
@@ -134,13 +127,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="Register.fr-CA.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="statusForm.resx">
-      <DependentUpon>statusForm.cs</DependentUpon>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -155,21 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\aboutLogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\babbel-logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Duolingo-logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Memrise-logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

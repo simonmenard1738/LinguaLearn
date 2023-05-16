@@ -31,7 +31,12 @@ namespace LinguaLearn
 
         
 
-        
+        public static void SaveRecords(List<Record> records, string filePath)
+        {
+            string json = JsonConvert.SerializeObject(records);
+            File.WriteAllText(filePath, json);
+
+        }
 
         //The fill list methods is so to fill the list with whatever was previously in the JSON file.
         // You should put these in the forms Load event
@@ -105,6 +110,26 @@ namespace LinguaLearn
 
             rg.Show();
             this.Hide();
+        }
+
+        private void appLa_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+
+
+            switch (appLa_combo.SelectedIndex)
+            {
+                case 0:
+                    changeLanguage.UpdateConfig("language", "en");
+                    Application.Restart();
+
+                    break;
+                case 1:
+                    changeLanguage.UpdateConfig("language", "fr-CA");
+                    Application.Restart();
+
+                    break;
+            }
         }
     }
 }

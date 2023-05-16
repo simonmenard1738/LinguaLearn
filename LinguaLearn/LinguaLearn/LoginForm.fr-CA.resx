@@ -117,4 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 32</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Se Connecter</value>
+  </data>
+  <data name="get_btn.Text" xml:space="preserve">
+    <value>Connecter</value>
+  </data>
+  <data name="goRegister.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 216</value>
+  </data>
+  <data name="goRegister.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 16</value>
+  </data>
+  <data name="goRegister.Text" xml:space="preserve">
+    <value>Vous voulez vous inscrire ? Cliquez ici.</value>
+  </data>
+  <data name="appLa_combo.Items" xml:space="preserve">
+    <value>Anglais</value>
+  </data>
+  <data name="appLa_combo.Items1" xml:space="preserve">
+    <value>Francais</value>
+  </data>
+  <data name="appLa_combo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 265</value>
+  </data>
+  <data name="appLa_combo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 24</value>
+  </data>
+  <data name="appLa_combo.Text" xml:space="preserve">
+    <value>L'angue de l'application</value>
+  </data>
 </root>

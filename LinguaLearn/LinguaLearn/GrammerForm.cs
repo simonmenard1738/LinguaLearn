@@ -14,25 +14,9 @@ namespace LinguaLearn
     {//feed into form constructor 
         ThereQuestion quiz;
         KeyValuePair<string, ThereQuestion.answer> currentQuestion;
-        Record record;
-        mainForm form;
-        public GrammerForm(Record record, mainForm form, int lang = 0)
+        public GrammerForm(int lang = 2)
         {
-            this.record = record;
-            this.form = form;
-            string language = "";
-            switch (lang) {
-                case 0:
-                    language = "English";
-                    break;
-                case 1:
-                    language = "French";
-                    break;
-                case 2:
-                    language = "Spanish";
-                    break;
-            }
-            quiz = new ThereQuestion($"{language} Grammar", 10, lang);
+            quiz = new ThereQuestion("There question", 10, lang);
 
             InitializeComponent();
             if (lang == 1)
@@ -101,7 +85,7 @@ namespace LinguaLearn
 
         private void AskQuestion()
         {
-            if (quiz.questions.Count != 1)
+            if (quiz.questions.Count != 0)
             {
                 this.currentQuestion = quiz.questions.ElementAt(quiz.random.Next(quiz.questions.Count));
                 qLabel.Text = this.currentQuestion.Key;
@@ -110,9 +94,6 @@ namespace LinguaLearn
             else
             {
                 MessageBox.Show($"{quiz.Grade}/{quiz.QUESTION_COUNT}");
-                record.AddExercise(quiz);
-                form.Show();
-                this.Hide();
             }
         }
 

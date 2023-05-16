@@ -117,4 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 72</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>          LinguaLearn 
+Application d'apprentissage
+            des langues</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Anglaish</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>Espagnol</value>
+  </data>
+  <data name="comboBox1.Text" xml:space="preserve">
+    <value>Choisissez une langue à apprendre</value>
+  </data>
+  <data name="aboutButton.Text" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="vocabButton.Text" xml:space="preserve">
+    <value>Vocabulaire</value>
+  </data>
+  <data name="statusButton.Text" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="matchButton.Text" xml:space="preserve">
+    <value>Correspondre</value>
+  </data>
+  <data name="vocabularyButton.Text" xml:space="preserve">
+    <value>Vocabulaire</value>
+  </data>
+  <data name="grammerButton.Text" xml:space="preserve">
+    <value>Grammaire</value>
+  </data>
+  <data name="appLa_combo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 215</value>
+  </data>
+  <data name="appLa_combo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
+  </data>
+  <data name="appLa_combo.Text" xml:space="preserve">
+    <value>Langue de l'application</value>
+  </data>
 </root>
