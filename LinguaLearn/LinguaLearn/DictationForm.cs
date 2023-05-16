@@ -13,10 +13,15 @@ namespace LinguaLearn
 {
     public partial class DictationForm : Form
     {
-        DictationQuestion a = new DictationQuestion("What is what", 8);
+        DictationQuestion quiz = new DictationQuestion("Spelling Bee", 8);
         string answer = "";
-        public DictationForm()
+        Record record;
+        mainForm form;
+        static int count;
+        public DictationForm(Record record, mainForm form)
         {
+            this.form = form;
+            this.record = record;
             InitializeComponent();
             AskQuestion();
         }
@@ -25,26 +30,31 @@ namespace LinguaLearn
         {
             if (inputTextBox.Text.ToLower().Equals(answer))
             {
-                a.CorrectAnswer();
+                quiz.CorrectAnswer();
                 AskQuestion();
             }
             else { 
-                a.IncorrectAnswer();
+                quiz.IncorrectAnswer();
                 AskQuestion();
             }
         }
         public void AskQuestion()
         {
-            if (a.words.Count != 0)
+            
+            if (quiz.words.Count != 0 && quiz.QUESTION_COUNT<=count)
             {
                 //displayLabel.Text = a.words.ElementAt(a.random.Next(a.words.Count)).Key;
-                var ask = a.words.ElementAt(a.random.Next(a.words.Count));
+                var ask = quiz.words.ElementAt(quiz.random.Next(quiz.words.Count));
                 answer = ask.Key;
                 ask.Value.Play();
-                a.words.Remove(answer);
+                quiz.words.Remove(answer);
+                count++;
             }
             else {
-                MessageBox.Show("Your result is" + a.Grade + "/" + a.QUESTION_COUNT);
+                MessageBox.Show("Your result is" + quiz.Grade + "/" + quiz.QUESTION_COUNT);
+                record.AddExercise(quiz);
+                form.Show();
+                this.Hide();
             }
             
         }

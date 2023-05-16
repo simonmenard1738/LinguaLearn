@@ -36,6 +36,13 @@ namespace LinguaLearn
                 users.AddRange(loadedUsers);
             }
         }
+
+        public static void SaveRecords(List<Record> records, string filePath)
+        {
+            string json = JsonConvert.SerializeObject(records);
+            File.WriteAllText(filePath, json);
+
+        }
         private void save_btn_Click(object sender, EventArgs e)
         {
             bool taken = false;

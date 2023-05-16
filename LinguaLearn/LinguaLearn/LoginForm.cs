@@ -31,12 +31,7 @@ namespace LinguaLearn
 
         
 
-        public static void SaveRecords(List<Record> records, string filePath)
-        {
-            string json = JsonConvert.SerializeObject(records);
-            File.WriteAllText(filePath, json);
-
-        }
+        
 
         //The fill list methods is so to fill the list with whatever was previously in the JSON file.
         // You should put these in the forms Load event

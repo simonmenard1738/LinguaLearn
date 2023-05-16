@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.displayLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.aboutButton = new System.Windows.Forms.Button();
             this.applaButton = new System.Windows.Forms.Button();
             this.vocabButton = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@
             this.vocabularyButton = new System.Windows.Forms.Button();
             this.grammerButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exitButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,23 +69,24 @@
             this.displayLabel.TabIndex = 1;
             this.displayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // comboBox1
+            // languageComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.languageComboBox.FormattingEnabled = true;
+            this.languageComboBox.Items.AddRange(new object[] {
             "English",
             "French",
             "Spanish"});
-            this.comboBox1.Location = new System.Drawing.Point(364, 54);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 24);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Choose a Language to Learn";
+            this.languageComboBox.Location = new System.Drawing.Point(364, 54);
+            this.languageComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.languageComboBox.Name = "languageComboBox";
+            this.languageComboBox.Size = new System.Drawing.Size(215, 24);
+            this.languageComboBox.TabIndex = 2;
+            this.languageComboBox.Text = "Choose a Language to Learn";
+            this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // aboutButton
             // 
-            this.aboutButton.Location = new System.Drawing.Point(20, 263);
+            this.aboutButton.Location = new System.Drawing.Point(20, 211);
             this.aboutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.aboutButton.Name = "aboutButton";
             this.aboutButton.Size = new System.Drawing.Size(115, 28);
@@ -94,7 +96,7 @@
             // 
             // applaButton
             // 
-            this.applaButton.Location = new System.Drawing.Point(20, 212);
+            this.applaButton.Location = new System.Drawing.Point(20, 175);
             this.applaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.applaButton.Name = "applaButton";
             this.applaButton.Size = new System.Drawing.Size(115, 28);
@@ -104,7 +106,7 @@
             // 
             // vocabButton
             // 
-            this.vocabButton.Location = new System.Drawing.Point(20, 158);
+            this.vocabButton.Location = new System.Drawing.Point(20, 139);
             this.vocabButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.vocabButton.Name = "vocabButton";
             this.vocabButton.Size = new System.Drawing.Size(115, 28);
@@ -121,6 +123,7 @@
             this.statusButton.TabIndex = 6;
             this.statusButton.Text = "Status";
             this.statusButton.UseVisualStyleBackColor = true;
+            this.statusButton.Click += new System.EventHandler(this.recordButton_Click);
             // 
             // groupBox1
             // 
@@ -138,7 +141,7 @@
             // 
             // matchButton
             // 
-            this.matchButton.Location = new System.Drawing.Point(296, 87);
+            this.matchButton.Location = new System.Drawing.Point(296, 34);
             this.matchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.matchButton.Name = "matchButton";
             this.matchButton.Size = new System.Drawing.Size(115, 47);
@@ -148,23 +151,25 @@
             // 
             // vocabularyButton
             // 
-            this.vocabularyButton.Location = new System.Drawing.Point(159, 87);
+            this.vocabularyButton.Location = new System.Drawing.Point(159, 34);
             this.vocabularyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.vocabularyButton.Name = "vocabularyButton";
             this.vocabularyButton.Size = new System.Drawing.Size(115, 47);
             this.vocabularyButton.TabIndex = 10;
             this.vocabularyButton.Text = "Vocabulary";
             this.vocabularyButton.UseVisualStyleBackColor = true;
+            this.vocabularyButton.Click += new System.EventHandler(this.vocabularyButton_Click);
             // 
             // grammerButton
             // 
-            this.grammerButton.Location = new System.Drawing.Point(20, 87);
+            this.grammerButton.Location = new System.Drawing.Point(20, 34);
             this.grammerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grammerButton.Name = "grammerButton";
             this.grammerButton.Size = new System.Drawing.Size(115, 47);
             this.grammerButton.TabIndex = 9;
             this.grammerButton.Text = "Grammar";
             this.grammerButton.UseVisualStyleBackColor = true;
+            this.grammerButton.Click += new System.EventHandler(this.grammerButton_Click);
             // 
             // panel1
             // 
@@ -175,17 +180,28 @@
             this.panel1.Size = new System.Drawing.Size(443, 229);
             this.panel1.TabIndex = 8;
             // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(20, 287);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(115, 29);
+            this.exitButton.TabIndex = 9;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 337);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusButton);
             this.Controls.Add(this.vocabButton);
             this.Controls.Add(this.applaButton);
             this.Controls.Add(this.aboutButton);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.displayLabel);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -202,7 +218,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label displayLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.Button aboutButton;
         private System.Windows.Forms.Button applaButton;
         private System.Windows.Forms.Button vocabButton;
@@ -212,5 +228,6 @@
         private System.Windows.Forms.Button vocabularyButton;
         private System.Windows.Forms.Button grammerButton;
         private System.Windows.Forms.Button matchButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace LinguaLearn
 {
@@ -18,8 +19,11 @@ namespace LinguaLearn
         User currentUser;
         Record currentRecord;
         Timer timer = new Timer();
+        int lang = 0;
+        static List<Record> records;
         public mainForm(User currentUser)
         {
+            records = JsonConvert.DeserializeObject<List<Record>>(File.ReadAllText("..\\..\\recordsJSON"));
             this.currentUser = currentUser;
             currentRecord = LoadRecord(currentUser.Username);
             InitializeComponent();
@@ -39,11 +43,25 @@ namespace LinguaLearn
         {
             string json = File.ReadAllText("..\\..\\recordsJSON");
             List<Record> records = JsonConvert.DeserializeObject<List<Record>>(json);
-            Record record = records.FirstOrDefault(u => u.Username == username);
+            Record record = null;
+            if (records != null)
+            {
+                record = records.FirstOrDefault(u => u.Username == username);
+            }
+            else { 
+                records = new List<Record>();
+            }
+            
+            
             if (record == null)
             {
                 MessageBox.Show($"No record was found for user '{username}'.");
-                return null;
+                record = new Record(username);
+                record.Exercises = new List<string>();
+                records.Add(record);
+                SaveRecords(records);
+                return record;
+
             }
             else
             {
@@ -51,5 +69,57 @@ namespace LinguaLearn
             }
         }
 
+        public void UpdateRecord() {
+            if (records == null) {
+                records = new List<Record>();
+            }
+            foreach (Record record in records) {
+                if (record.Username == this.currentUser.Username) {
+                    record.Exercises = currentRecord.Exercises;
+                }
+            }
+            SaveRecords(records);
+        }
+
+        public static void SaveRecords(List<Record> records)
+        {
+            string json = JsonConvert.SerializeObject(records);
+            File.WriteAllText("..\\..\\recordsJSON", json);
+
+        }
+
+        private void grammerButton_Click(object sender, EventArgs e)
+        {
+            GrammerForm newGrammer = new GrammerForm(currentRecord, this, lang);
+            newGrammer.Show();
+            this.Hide();
+        }
+
+        private void vocabularyButton_Click(object sender, EventArgs e)
+        {
+            DictationForm newDictation = new DictationForm(currentRecord, this);
+            newDictation.Show();
+            this.Hide();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            UpdateRecord();
+            Application.Exit();
+        }
+
+        private void recordButton_Click(object sender, EventArgs e)
+        {
+            string recordString = "";
+            foreach (string exercise in currentRecord.Exercises) { 
+                recordString += exercise +"\n";
+            }
+            MessageBox.Show(recordString, $"{currentUser.Username}'s Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lang = languageComboBox.SelectedIndex;
+        }
     }
 }
