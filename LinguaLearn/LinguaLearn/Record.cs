@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace LinguaLearn
 {
-    internal class Record
+    public class Record
     {
+        public string Username { get; set; }
+        public List<string> Exercises { get; set; }
 
-        public Record() { 
-            
+        public Record(string Username) {
+            this.Username = Username;
+        }
+
+        public void AddExercise(Question quiz) {
+            Exercises.Add($"{quiz.Name}: Done on {quiz.timeStarted}. Result: {quiz.Grade}/{quiz.QUESTION_COUNT}");
         }
     }
 }

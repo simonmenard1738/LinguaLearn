@@ -9,8 +9,9 @@ using System.Threading;
 
 namespace LinguaLearn
 {
-    internal class Question
+    public class Question
     {
+        public DateTime timeStarted;
         private bool muted = false;
         public string Name { get; set; }
         public int Grade { get; set; }
@@ -20,6 +21,7 @@ namespace LinguaLearn
         public Random random = new Random();
         public Question(string name, int totalQuestions)
         {
+            timeStarted = DateTime.Now;
             Name = name;
             Grade = totalQuestions;
             QUESTION_COUNT = totalQuestions;

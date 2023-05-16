@@ -16,7 +16,9 @@ namespace LinguaLearn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            //Application.Run(new GrammerForm());
+            //Application.Run(new mainForm());
+            Application.Run(new LoginForm());
         }
     }
 }

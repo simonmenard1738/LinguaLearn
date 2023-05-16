@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace LinguaLearn
 {
-    internal class User
+    public class User
     {
-        private string FName { get; set; }
-        private string LName { get; set; }
-        private string Password { get; set; }
-        public string Username { get; set; }
 
-        public User(String fullName, String uName, String pWord, Record userRecord = null) { 
-            
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+
+        public override string ToString()
+        {
+            return $"{{{nameof(Username)}={Username}, {nameof(Password)}={Password}, {nameof(Email)}={Email}}}";
+        }
+
+        public User(string uname, string pword, string email) { 
+            this.Username = uname ;
+            this.Password = pword ;
+            this.Email = email ;
         }
     }
 }

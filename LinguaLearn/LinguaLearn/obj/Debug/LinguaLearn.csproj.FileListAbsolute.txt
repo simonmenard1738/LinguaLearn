@@ -24,3 +24,39 @@ C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\D
 C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CopyComplete
 C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
 C:\Users\2062055\Downloads\source (1)\source\repos\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe.config
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.pdb
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.AssemblyReference.cache
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.SuggestedBindingRedirects.cache
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.DictationForm.resources
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.GrammerForm.resources
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.mainForm.resources
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Properties.Resources.resources
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.GenerateResource.cache
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CoreCompileInputs.cache
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CopyComplete
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb
+C:\Users\nabil\Documents\Vanier\App dev\LinguaLearn-main\LinguaLearn-main\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.matchingForm.resources
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe.config
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.exe
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\bin\Debug\LinguaLearn.pdb
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.dll
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\bin\Debug\Newtonsoft.Json.xml
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.AssemblyReference.cache
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.SuggestedBindingRedirects.cache
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.DictationForm.resources
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.GrammerForm.resources
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.LoginForm.resources
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.mainForm.resources
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.matchingForm.resources
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Properties.Resources.resources
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.GenerateResource.cache
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CoreCompileInputs.cache
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.csproj.CopyComplete
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.exe
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.pdb
+C:\Users\simon\Downloads\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn-56cd8f4699e48b712f33a04ebd6d10ccb6bf8743\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Register.resources
