@@ -55,10 +55,17 @@ namespace LinguaLearn
 
             if (!taken)
             {
-                User user = new User(user_textbox.Text, pass_txtbox.Text, email_txtbox.Text);
-                users.Add(user);
-                SaveUsers(users, UsersPath);
-                MessageBox.Show("Welcome, " + user_textbox.Text + "! You can now log in.");
+                if (String.IsNullOrEmpty(user_textbox.Text) || String.IsNullOrEmpty(pass_txtbox.Text)) {
+                    MessageBox.Show("Please enter values in all locations.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+                }
+                else {
+                    User user = new User(user_textbox.Text, pass_txtbox.Text, email_txtbox.Text);
+                    users.Add(user);
+                    SaveUsers(users, UsersPath);
+                    MessageBox.Show("Welcome, " + user_textbox.Text + "! You can now log in.");
+                }
             }
             else {
                 MessageBox.Show("Username already taken. Please try again.");
