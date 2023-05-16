@@ -117,5 +117,27 @@ namespace LinguaLearn
             (sender as Label).Visible = false;
             (sender as Label).Enabled= false;
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguages();
+
+
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    changeLanguage.UpdateConfig("language", "en");
+                    Application.Restart();
+
+                    break;
+                case 1:
+                    changeLanguage.UpdateConfig("language", "fr-CA");
+                    Application.Restart();
+
+                    break;
+            }
+        
+        }
     }
-}
+    }
+
