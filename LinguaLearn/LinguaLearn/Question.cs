@@ -12,6 +12,7 @@ namespace LinguaLearn
     public class Question
     {
         public DateTime timeStarted;
+        public string Muted { get; set; }
         private bool muted = false;
         public string Name { get; set; }
         public int Grade { get; set; }
