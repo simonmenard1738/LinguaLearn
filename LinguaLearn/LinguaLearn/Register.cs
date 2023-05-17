@@ -18,6 +18,10 @@ namespace LinguaLearn
         public static string RecordsPath = "..\\..\\recordsJSON";
         public static List<User> users = new List<User>();
         public static List<Record> records = new List<Record>();
+        bool hasSpecialCharacter = false;
+        bool hasUppercaseCharacter = false;
+        bool hasNumber= false;
+        bool taken = false;
 
         private LoginForm lg;
         public Register(LoginForm lg = null)
@@ -45,9 +49,32 @@ namespace LinguaLearn
         }
         private void save_btn_Click(object sender, EventArgs e)
         {
-            bool taken = false;
-            foreach (User usr in users) {
-                if (user_textbox.Text == usr.Username) {
+            taken = false;
+            hasNumber = false;
+            hasSpecialCharacter = false;
+            hasUppercaseCharacter = false;
+
+            foreach (char c in pass_txtbox.Text)
+            {
+                if (!char.IsLetterOrDigit(c))
+                {
+                    hasSpecialCharacter = true;
+                }
+
+                if (char.IsUpper(c))
+                {
+                    hasUppercaseCharacter = true;
+                }
+                if (char.IsDigit(c))
+                {
+                    hasNumber = true;
+                }
+            }
+
+            foreach (User usr in users)
+            {
+                if (user_textbox.Text == usr.Username)
+                {
                     taken = true;
                     break;
                 }
@@ -55,25 +82,69 @@ namespace LinguaLearn
 
             if (!taken)
             {
-                if (String.IsNullOrEmpty(user_textbox.Text) || String.IsNullOrEmpty(pass_txtbox.Text)) {
+                if (String.IsNullOrEmpty(user_textbox.Text) || String.IsNullOrEmpty(pass_txtbox.Text))
+                {
                     MessageBox.Show("Please enter values in all locations.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+
+                if (pass_txtbox.Text.Length < 8)
+                {
+                    MessageBox.Show("Please enter at least a minimum of 8 characters long.", "Short password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
                 }
-                else {
+                else if (!hasNumber && hasUppercaseCharacter == true && hasSpecialCharacter == true)
+                {
+                    MessageBox.Show("Please enter at least a minimum of 1 Number.", "Weak password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (!hasSpecialCharacter && hasUppercaseCharacter == true && hasNumber == true)
+                {
+                    MessageBox.Show("Please enter at least a minimum of 1 special character.", "Weak password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                else if (!hasUppercaseCharacter && hasSpecialCharacter == true && hasNumber == true)
+                {
+                    MessageBox.Show("Please enter at least a minimum of 1 uppercase character.", "Weak password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (hasUppercaseCharacter == true && !hasSpecialCharacter && !hasNumber)
+                {
+                    MessageBox.Show("Please enter  at least  a minimum of 1 Number, and at least a minimum of 1 special character.", "Weak password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (!hasUppercaseCharacter && hasSpecialCharacter == true && !hasNumber)
+                {
+                    MessageBox.Show("Please enter  at least  a minimum of 1 Number and a minimum of 1 uppercase "
+                        + "character.", "Weak password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (!hasUppercaseCharacter && !hasSpecialCharacter && hasNumber == true)
+                {
+                    MessageBox.Show("Please enter  at least  a minimum of 1 uppercase "
+                        + "character and at least a minimum of 1 special character.", "Weak password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                else if (!hasUppercaseCharacter && !hasSpecialCharacter && !hasNumber)
+                {
+                    MessageBox.Show("Please enter  at least  a minimum of 1 Number, a minimum of 1 uppercase "
+                        + "character and at least a minimum of 1 special character.", "Weak password!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
                     User user = new User(user_textbox.Text, pass_txtbox.Text, email_txtbox.Text);
                     users.Add(user);
                     SaveUsers(users, UsersPath);
                     MessageBox.Show("Welcome, " + user_textbox.Text + "! You can now log in.");
                 }
+
+
             }
-            else {
+            else
+            {
                 MessageBox.Show("Username already taken. Please try again.");
             }
             user_textbox.Text = "";
             pass_txtbox.Text = "";
             email_txtbox.Text = "";
-            
+
         }
 
         public static void SaveUsers(List<User> users, string filePath)
@@ -88,7 +159,7 @@ namespace LinguaLearn
             if (lg == null)
             {
                 lg = new LoginForm(this);
-                
+
             }
 
             lg.Show();
