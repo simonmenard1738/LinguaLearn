@@ -59,6 +59,10 @@ namespace LinguaLearn
                     MessageBox.Show("Please enter values in all locations.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
+                } else if (!new Regex("^[a-zA-Z]*@[a-zA-Z]*\\.(com|net|org)$").Match(email_txtbox.Text).Success) {
+                    MessageBox.Show("Please enter a valid email address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
                 }
                 else {
                     User user = new User(user_textbox.Text, pass_txtbox.Text, email_txtbox.Text);
