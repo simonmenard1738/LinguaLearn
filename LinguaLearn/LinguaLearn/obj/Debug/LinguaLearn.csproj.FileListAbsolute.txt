@@ -158,3 +158,4 @@ C:\Users\bjpan\OneDrive\Documents\Project\LinguaLearn\LinguaLearn\LinguaLearn\ob
 C:\Users\bjpan\OneDrive\Documents\Project\LinguaLearn\LinguaLearn\LinguaLearn\bin\Debug\fr\LinguaLearn.resources.dll
 C:\Users\bjpan\OneDrive\Documents\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.mainForm.fr.resources
 C:\Users\bjpan\OneDrive\Documents\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\fr\LinguaLearn.resources.dll
+C:\Users\bjpan\OneDrive\Documents\Project\LinguaLearn\LinguaLearn\LinguaLearn\obj\Debug\LinguaLearn.Register.fr-CA.resources
