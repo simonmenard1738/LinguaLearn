@@ -13,7 +13,7 @@ namespace LinguaLearn
     {
         public enum answer { their, theyre, there, ça, sa, çà, lo, la, el, ERROR };
         public Dictionary<String, answer> questions = new Dictionary<String, answer>();
-        public Random random = new Random();
+        public new Random random = new Random();
         int lang;
         public ThereQuestion(string name, int totalQuestions, int lang) : base(name, totalQuestions)
         {
